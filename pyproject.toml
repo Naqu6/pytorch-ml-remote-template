@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project_name"
+version = "0.0.1"
+description = "Lookup over kvs"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "datasets",
+    "transformers==4.49.0",
+    "numpy",
+    "einops",
+    "tqdm",
+    "wandb",
+    "matplotlib",
+]
+
+[tool.setuptools]
+packages = ["project_name"]
